@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorshe dynamic</title>
+    <link rel="shortcut icon" href="images/awsdfdf.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    body {
+    font-family: "Open Sans", sans-serif;
+}
+
+
+.faq-item {
+    /* display: flex; */
+    align-items: center;
+    /* margin-bottom: 15px; */
+    gap: 15px;
+    /* background: #f9fafb; */
+    padding: 15px;
+    padding-top: 5px;
+    border-top: 1px solid rgb(232, 232, 232);
+    border-left: 1px solid rgb(232, 232, 232);
+}
+/* .om-wayr{
+    display: flex;
+    text-align: center;
+    align-items: center;
+} */
+.faq-image {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+}
+.stat{
+    padding: 10px 15px;
+    border-left: 1px solid rgb(232, 232, 232);
+}
+.faq-image:hover {
+    transform: scale(1.1);
+}
+
+.faq-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+    border-bottom: 1px solid #bfbfbf;
+    padding-bottom: 5px;
+}
+
+.faq-question {
+    font-size: 18px;
+    font-weight: 600;
+    align-items: center;
+    display: flex;
+}
+.siits{
+    margin-left: 20px;
+}
+.itema{
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.iat{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin-bottom: 10px;
+}
+.vegi{
+    background-size: 10px;
+    width: 15px;
+    height: 15px;
+    margin-top: 2px;
+}
+.fbfnm{
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.meteiqt{
+    color: #8e8e8e;
+    width: 90%;
+    padding-left: 25px;
+    font-weight: 400;
+}
+.faq-arrow {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+    margin-left: 20px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px ;
+    font-size: 16px;
+    color: #555;
+    line-height: 25px;
+    background: #f9fafb;
+}
+.price{
+    font-weight: 500;
+    color: red;
+    font-size: 18px;
+    padding-left: 25px;
+    white-space: nowrap;
+}
+.secpri{
+    color: green;
+    margin-left: 5px;
+}
+
+.open .faq-arrow {
+    transform: rotate(180deg);
+}
+
+/* Style for the image row */
+.image-row {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; /* Adds space between images */
+    overflow-x: hidden; /* No scrolling on larger screens */
+    margin: 20px 0;
+    padding: 10px;
+    max-width: 100%;
+    text-align: center;
+}
+.image-row a{
+    text-decoration: none;
+}
+.smrdc{
+    font-family: "Open Sans", sans-serif;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+/* Style for each image */
+.menu-image {
+    border-radius: 5px;
+    border: 1px solid #fff;
+    width: 80px; /* Fixed width */
+    height: 80px; /* Fixed height */
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transition for zoom and blur */
+    flex-shrink: 0; /* Prevents image from shrinking */
+    object-fit: cover; /* Ensures images fit within the size without distortion */
+}
+
+/* Blur effect for unselected images */
+.image-blur {
+    filter: blur(3px); /* Apply blur to unselected images */
+    opacity: 0.6; /* Make unselected images slightly transparent */
+}
+
+/* Highlight effect for the selected image */
+.image-highlight {
+    transform: scale(1.2); /* Make the clicked image larger */
+    filter: none; /* Remove any blur from the selected image */
+    opacity: 1; /* Full opacity for selected image */
+}
+
+/* Enable scrolling with small images on small screens */
+@media (max-width: 768px) {
+    .image-row {
+        overflow-x: auto; /* Enable horizontal scroll */
+        flex-wrap: nowrap; /* Prevent wrapping of images */
+        scroll-behavior: smooth; /* Smooth scrolling */
+        -webkit-overflow-scrolling: touch; /* Smooth scroll on iOS */
+    }
+
+    .menu-image {
+        width: 80px; /* Fixed width for small screens */
+        height: 80px; /* Fixed height for small screens */
+    }
+}
+@media screen and (max-width: 500px){
+    .image-row{
+        justify-content: flex-start;
+    }
+}
+
+</style>
+
+    <style>
+    @font-face { font-family: Helvetica; font-weight: 650; src: url('helvetica65.woff'); }
+
+   .sidem h3{
+    font-family: Helvetica; font-weight: 650;
+    font-size: 18px;
+    margin: 0px;
+    cursor: pointer;
+    padding:  10px;
+    padding-left: 30px;
+    font-weight: 300;
+    color: rgb(28, 28, 28);
+    border-right: none;
+    background: none;
+    margin-right: 60px;
+   }
+   .sidem a{
+    text-decoration: none;
+   }
+   .sdcb{
+    width: 100%;
+   }
+    .ove{
+    padding: 0 50px 0 50px;
+    display: flex;
+
+}
+
+    </style>
+
+    <div class="mainwrapper">
+        <h1 class="sorh">Sorshe - Authentic Bengali Restaurant</h1>
+        <h3 class="tagline">Bengali, Biryani, Beverages</h3>
+        <h3 class="lm">Madhapur, Hyderabad</h3>
+
+        <div class="albuon" >
+          <h3 class="lm rdb"> <span style='font-size:25px; margin-right: 10px; color: red;'>&#8620;</span>  Direction</h3>
+          <h3 class="lm rdb"> <span style="margin-right: 10px; color: red;"><i class="fa-solid fa-bookmark"></i></span>Bookmark</h3>
+          <h3 class="lm rdb"> <span style="margin-right: 10px; color: red;"><i class="fa fa-share"></i></span> Share</h3>
+        </div>
+
+    <div>
+
+        <div class="cater">
+            <a href="page1.html">
+                <h3 class="menustater">Overview</h3>
+            </a>
+           
+            <a href="page2.html">
+              <h3 class="menustater">Order Online</h3>
+            </a>
+       
+            <a href="page3.html">
+              <h3 class="menustater">Reviews</h3>
+            </a>
+       
+            <a href="page4.html">
+              <h3 class="menustater">Photos</h3>
+            </a>
+       
+            <a href="page5.html">
+              <h3 class="menustater">Menu</h3>
+            </a>
+        </div>
+    </div>
+    
+</div>
+
+  <div class="ove" >
+
+     <div>
+        <div class="sidem">
+          <a href="#stat"><h3 class="sdcb">Staters (5) </h3></a>
+          <a href="#main"><h3 class="sdcb">Main Course (12)</h3></a>
+          <a href="#rice"><h3 class="sdcb">Rice (2)</h3></a>
+          <a href="#desserts"><h3 class="sdcb">Desserts (4)</h3></a>
+          <a href="#combos"><h3 class="sdcb">Combos (9)</h3></a>
+          <a href="#beverages"><h3 class="sdcb">Beverages (13)</h3></a>
+        </div>
+     </div>
+
+     <div class="faq-container">
+      <h2 class="stat">STARTER</h2>
+
+      <div class="faq-item">
+          <!-- <div class="faq-header om-wayr">
+            <div class="ita">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTk0mkeknyuA_E-W8nWun8m0RcpY0RWzmjng&s" alt="FAQ 1" class="faq-image">
+              <div class="faq-question siits">STARTER</div>
+            </div>
+              <div class="faq-arrow">&#9662;</div> 
+          </div> -->
+
+                <div>
+                      <div class="itema">
+                          <div class="iat" >
+                            <img class="vegi" src="images/nonvegtri.png" alt="">
+                            <p class="fbfnm">Fish batter Fry</p>
+                           </div>
+                           <div>
+                            <Span class="price"> ₹ 499</Span>
+                          </div>
+                      </div>
+                       <!-- <Span class="price">  ₹ 499</Span> -->
+                      <p class="meteiqt">Fillet of fish dipped in batter and fried to a juicy inside, crispy outside finish.</p>
+                 </div>
+
+                 <div>
+                  <div class="itema">
+                      <div class="iat" >
+                        <img class="vegi" src="images/nonvegtri.png" alt="">
+                        <p class="fbfnm">Fish fry</p>
+                       </div>
+                       <div>
+                        <Span class="price">  ₹ 499</Span>
+                      </div>
+                  </div>
+                   <!-- <Span class="price">  ₹ 499</Span> -->
+                  <p class="meteiqt">Fillet of fish marinated in aromatic spices and fried in a crunschy coating.</p>
+             </div>
+
+             <div>
+              <div class="itema">
+                  <div class="iat" >
+                    <img class="vegi" src="images/nonvegtri.png" alt="">
+                    <p class="fbfnm">Fish finger</p>
+                   </div>
+                   <div>
+                    <Span class="price">  ₹ 499</Span>
+                  </div>
+              </div>
+               <!-- <Span class="price">  ₹ 499</Span> -->
+              <p class="meteiqt">Fillet of fish dipped in batter and fried to a juicy inside, crispy outside finish.</p>
+         </div>
+
+         <div>
+          <div class="itema">
+              <div class="iat" >
+                <img class="vegi" src="images/nonvegtri.png" alt="">
+                <p class="fbfnm">Chicken cutlet</p>
+               </div>
+               <div>
+                <Span class="price">  ₹ 449</Span>
+              </div>
+          </div>
+           <!-- <Span class="price">  ₹ 499</Span> -->
+          <p class="meteiqt">Minced chicken marinated in aromatic spices and shallow fried to perfection.</p>
+     </div>
+
+     <div>
+      <div class="itema">
+          <div class="iat" >
+            <img class="vegi" src="images/nonvegtri.png" alt="">
+            <p class="fbfnm">Chicken pakoda</p>
+           </div>
+           <div>
+            <Span class="price">  ₹ 449</Span>
+          </div>
+      </div>
+       <!-- <Span class="price">  ₹ 499</Span> -->
+      <p class="meteiqt">Chicken pieces with bone marinated in special spices and fried to perfection.</p>
+ </div>
+
+          </div>
+         
+          <div class="faq-container" id="main">
+            <h2 class="stat">MAIN COURSE</h2>
+        
+            <div class="faq-item">
+                <!-- <div class="faq-header om-wayr">
+                  <div class="ita">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTk0mkeknyuA_E-W8nWun8m0RcpY0RWzmjng&s" alt="FAQ 1" class="faq-image">
+                    <div class="faq-question siits">STARTER</div>
+                  </div>
+                    <div class="faq-arrow">&#9662;</div> 
+                </div> -->
+        
+                      <div>
+                            <div class="itema">
+                                <div class="iat" >
+                                  <img class="vegi" src="images/greenveg.png" alt="">
+                                  <p class="fbfnm">Shukto</p>
+                                 </div>
+                                 <div>
+                                  <Span class="price secpri">  ₹ 299</Span>
+                                </div>
+                            </div>
+                             <!-- <Span class="price">  ₹ 499</Span> -->
+                            <p class="meteiqt">An Evergreen preparation from grandma's kitchen, consists mixed vegetables including bitter gourd cooked to a smooth finish.</p>
+                       </div>
+        
+                       <div>
+                        <div class="itema">
+                            <div class="iat" >
+                              <img class="vegi" src="images/greenveg.png" alt="">
+                              <p class="fbfnm">Jhinge Aloo Posto</p>
+                             </div>
+                             <div>
+                              <Span class="price secpri">  ₹ 399</Span>
+                            </div>
+                        </div>
+                         <!-- <Span class="price">  ₹ 499</Span> -->
+                        <p class="meteiqt">Ridge Gourd and potato cooked in a thick gravy made out of poppy seeds.</p>
+                   </div>
+        
+                   <div>
+                    <div class="itema">
+                        <div class="iat" >
+                          <img class="vegi" src="images/greenveg.png" alt="">
+                          <p class="fbfnm">Chholar dal (with jhuri bhaja)</p>
+                         </div>
+                         <div>
+                          <Span class="price secpri">  ₹ 299</Span>
+                        </div>
+                    </div>
+                     <!-- <Span class="price">  ₹ 499</Span> -->
+                    <p class="meteiqt">Chana Dal cooked in ghee with chunk of coconut, served with grated crispy fried potato.</p>
+               </div>
+        
+               <div>
+                 <div class="itema">
+                     <div class="iat" >
+                      <img class="vegi" src="images/nonvegtri.png" alt="">
+                      <p class="fbfnm">Machher matha diye dal (with jhuri bhaja)</p>
+                     </div>
+                     <div>
+                      <Span class="price">  ₹ 399</Span>
+                    </div>
+                 </div>
+                   <!-- <Span class="price">  ₹ 499</Span> -->
+                  <p class="meteiqt">Moong dal cooked with fish head that will make the bengali taste buds nostalgic. served with crispy fried potato.</p>
+              </div>
+        
+                   
+        
+               <div>
+                <div class="itema">
+                    <div class="iat" >
+                      <img class="vegi" src="images/nonvegtri.png" alt="">
+                      <p class="fbfnm">Sorshe rui</p>
+                     </div>
+                     <div>
+                      <Span class="price">  ₹ 399</Span>
+                    </div>
+                </div>
+                 <!-- <Span class="price">  ₹ 499</Span> -->
+                <p class="meteiqt">Fried ruhu fish cooked to perfection in traditional mustard gravy.</p>
+           </div>
+        
+           <div>
+            <div class="itema">
+                <div class="iat" >
+                  <img class="vegi" src="images/nonvegtri.png" alt="">
+                  <p class="fbfnm">katla kalia</p>
+                 </div>
+                 <div>
+                  <Span class="price">  ₹ 449</Span>
+                </div>
+            </div>
+             <!-- <Span class="price">  ₹ 499</Span> -->
+            <p class="meteiqt">Fried katla fish cooked with potato in an aromatic gravy.</p>
+        </div>
+                           
+        <div>
+            <div class="itema">
+                <div class="iat" >
+                  <img class="vegi" src="images/nonvegtri.png" alt="">
+                  <p class="fbfnm">Sorshe special bhetki</p>
+                 </div>
+                 <div>
+                  <Span class="price">  ₹ 449</Span>
+                </div>
+            </div>
+             <!-- <Span class="price">  ₹ 499</Span> -->
+            <p class="meteiqt">Succulent fresh water bhetki fish marinated in secret spices and steamed to perfection. this unique preparation of the chef will certainly blow your taste buds.</p>
+        </div>
+        
+        <div>
+            <div class="itema">
+                <div class="iat" >
+                  <img class="vegi" src="images/nonvegtri.png" alt="">
+                  <p class="fbfnm">Chingri bhape</p>
+                 </div>
+                 <div>
+                  <Span class="price">  ₹ 449</Span>
+                </div>
+            </div>
+             <!-- <Span class="price">  ₹ 499</Span> -->
+            <p class="meteiqt">Prawns marinated in mustard paste, steamed until tender. an all time favourite in the bengali kitchen.</p>
+        </div>
+        
+        <div>
+            <div class="itema">
+                <div class="iat" >
+                  <img class="vegi" src="images/nonvegtri.png" alt="">
+                  <p class="fbfnm">Chingri malai curry</p>
+                 </div>
+                 <div>
+                  <Span class="price">  ₹ 449</Span>
+                </div>
+            </div>
+             <!-- <Span class="price">  ₹ 499</Span> -->
+            <p class="meteiqt">prawns cooked in coconut milk with aromatic spices. this
+                silky gravy with the aroma of coconut milk and spices will remain in your wishlist.</p>
+        </div>
+        
+        <div>
+            <div class="itema">
+                <div class="iat" >
+                  <img class="vegi" src="images/nonvegtri.png" alt="">
+                  <p class="fbfnm">Chicken bhape</p>
+                 </div>
+                 <div>
+                  <Span class="price">  ₹ 449</Span>
+                </div>
+            </div>
+             <!-- <Span class="price">  ₹ 499</Span> -->
+            <p class="meteiqt">Succulent boneless chicken marinated in mustard paste, steamed until tender.</p>
+        </div>
+        
+        <div>
+            <div class="itema">
+                <div class="iat" >
+                  <img class="vegi" src="images/nonvegtri.png" alt="">
+                  <p class="fbfnm">Chicken kosha</p>
+                 </div>
+                 <div>
+                  <Span class="price">  ₹ 449</Span>
+                </div>
+            </div>
+             <!-- <Span class="price">  ₹ 499</Span> -->
+            <p class="meteiqt">Chicken cooked in the traditional semi-thick gravy that is rich in aroma.</p>
+        </div>
+        
+        <div>
+            <div class="itema">
+                <div class="iat" >
+                  <img class="vegi" src="images/nonvegtri.png" alt="">
+                  <p class="fbfnm">Mutton kosha.</p>
+                 </div>
+                 <div>
+                  <Span class="price">  ₹ 449</Span>
+                </div>
+            </div>
+             <!-- <Span class="price">  ₹ 499</Span> -->
+            <p class="meteiqt">Succulent tender mutton pieces cooked with potato in aromatic traditional gravy will certainly remind your grandma.</p>
+        </div>
+        
+                    
+                </div>
+            </div>
+<div class="faq-container" id="rice">
+        <h2 class="stat">RICE</h2>
+    
+        <div class="faq-item">
+            <!-- <div class="faq-header om-wayr">
+              <div class="ita">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTk0mkeknyuA_E-W8nWun8m0RcpY0RWzmjng&s" alt="FAQ 1" class="faq-image">
+                <div class="faq-question siits">STARTER</div>
+              </div>
+                <div class="faq-arrow">&#9662;</div> 
+            </div> -->
+    
+                  <div>
+                      <div class="itema">
+                            <div class="iat" >
+                              <img class="vegi" src="images/greenveg.png" alt="">
+                              <p class="fbfnm">Sada bhat</p>
+                             </div>
+                             <div>
+                              <Span class="price secpri">  ₹ 249</Span>
+                            </div>
+                        </div>
+                         <!-- <Span class="price">  ₹ 499</Span> -->
+                        <p class="meteiqt">Aromatic basmati rice steamed to perfection.</p>
+                   </div>
+    
+                <div>
+                    <div class="itema">
+                        <div class="iat" >
+                          <img class="vegi" src="images/greenveg.png" alt="">
+                          <p class="fbfnm">basanti pulao</p>
+                         </div>
+                         <div>
+                          <Span class="price secpri">  ₹ 299</Span>
+                        </div>
+                    </div>
+                     <!-- <Span class="price">  ₹ 499</Span> -->
+                    <p class="meteiqt">Aromatic basmati rice cooked with dry fruits and spices.</p>
+               </div>
+
+            </div>
+        </div>
+
+        <div class="faq-container" id="desserts">
+          <h2 class="stat">DESSERTS</h2>
+      
+          <div class="faq-item">
+              <!-- <div class="faq-header om-wayr">
+                <div class="ita">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTk0mkeknyuA_E-W8nWun8m0RcpY0RWzmjng&s" alt="FAQ 1" class="faq-image">
+                  <div class="faq-question siits">STARTER</div>
+                </div>
+                  <div class="faq-arrow">&#9662;</div> 
+              </div> -->
+      
+                    <div>
+                        <div class="itema">
+                              <div class="iat" >
+                                <img class="vegi" src="images/greenveg.png" alt="">
+                                <p class="fbfnm">Chutney and papad</p>
+                               </div>
+                               <div>
+                                <Span class="price secpri">  ₹ 249</Span>
+                              </div>
+                          </div>
+                           <!-- <Span class="price">  ₹ 499</Span> -->
+                          <p class="meteiqt">Tomatoes cooked in sugar syrup with raisins and aromatic spices, served with crispy fried papad. Combination of these two is as hit as "Jay-veeru".</p>
+                     </div>
+      
+                  <div>
+                      <div class="itema">
+                          <div class="iat" >
+                            <img class="vegi" src="images/greenveg.png" alt="">
+                            <p class="fbfnm">Payesh</p>
+                           </div>
+                           <div>
+                            <Span class="price secpri">  ₹ 249</Span>
+                          </div>
+                      </div>
+                       <!-- <Span class="price">  ₹ 499</Span> -->
+                      <p class="meteiqt">Aromatic rice cooked to perfection and finished into a silky smooth texture.</p>
+                 </div>
+  
+  
+                 <div>
+                  <div class="itema">
+                        <div class="iat" >
+                          <img class="vegi" src="images/greenveg.png" alt="">
+                          <p class="fbfnm">Gurer rosogolla</p>
+                         </div>
+                         <div>
+                          <Span class="price secpri">  ₹ 109</Span>
+                        </div>
+                    </div>
+                     <!-- <Span class="price">  ₹ 499</Span> -->
+                    <p class="meteiqt">Cottage cheese balls cooked in jagery syrup.</p>
+               </div>
+  
+  
+            <div>
+                <div class="itema">
+                    <div class="iat" >
+                      <img class="vegi" src="images/greenveg.png" alt="">
+                      <p class="fbfnm">Sandesh</p>
+                     </div>
+                     <div>
+                      <Span class="price secpri">  ₹ 109</Span>
+                    </div>
+                </div>
+                 <!-- <Span class="price">  ₹ 499</Span> -->
+                <p class="meteiqt">Mashed cottage cheese mixed with jagery, given a Soft finish.</p>
+           </div>
+  
+              </div>
+          </div>
+
+          <div class="faq-container" id="combos">
+            <h2 class="stat">COMBOS</h2>
+    
+            <div class="faq-item">
+                <!-- <div class="faq-header om-wayr">
+                  <div class="ita">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTk0mkeknyuA_E-W8nWun8m0RcpY0RWzmjng&s" alt="FAQ 1" class="faq-image">
+                    <div class="faq-question siits">STARTER</div>
+                  </div>
+                    <div class="faq-arrow">&#9662;</div> 
+                </div> -->
+    
+                      <div>
+                            <div class="itema">
+                                <div class="iat" >
+                                  <img class="vegi" src="images/nonvegtri.png" alt="">
+                                  <p class="fbfnm">Rui combo</p>
+                                 </div>
+                                 <div>
+                                  <Span class="price">  ₹649</Span>
+                                </div>
+                            </div>
+                             <!-- <Span class="price">  ₹ 499</Span> -->
+                            <p class="meteiqt">Shukto, machher matha diye moong dal with jhuri bhaja, sorshe rui, chutney with papad, payesh.</p>
+                       </div>
+    
+                       <div>
+                        <div class="itema">
+                            <div class="iat" >
+                              <img class="vegi" src="images/nonvegtri.png" alt="">
+                              <p class="fbfnm">Katla combo</p>
+                             </div>
+                             <div>
+                              <Span class="price">  ₹ 699</Span>
+                            </div>
+                        </div>
+                         <!-- <Span class="price">  ₹ 499</Span> -->
+                        <p class="meteiqt">Shukto, machher matha diye moong dal with jhuri bhaja, katla kalia, chutney with papad, payesh.</p>
+                   </div>
+    
+                   <div>
+                    <div class="itema">
+                        <div class="iat" >
+                          <img class="vegi" src="images/nonvegtri.png" alt="">
+                          <p class="fbfnm">Chicken kosha combo</p>
+                         </div>
+                         <div>
+                          <Span class="price">  ₹ 699</Span>
+                        </div>
+                    </div>
+                     <!-- <Span class="price">  ₹ 499</Span> -->
+                    <p class="meteiqt">Shukto, machher matha diye moong dal with jhuri bhaja, chicken kosha, chutney with papad, payesh.</p>
+               </div>
+    
+               <div>
+                <div class="itema">
+                    <div class="iat" >
+                      <img class="vegi" src="images/nonvegtri.png" alt="">
+                      <p class="fbfnm">Chicken bhape combo</p>
+                     </div>
+                     <div>
+                      <Span class="price">  ₹ 749</Span>
+                    </div>
+                </div>
+                 <!-- <Span class="price">  ₹ 499</Span> -->
+                <p class="meteiqt">Shukto, machher matha diye moong dal with jhuri bhaja, chicken bhape, chutney with papad, payesh.</p>
+           </div>
+    
+               <div>
+                <div class="itema">
+                    <div class="iat" >
+                      <img class="vegi" src="images/nonvegtri.png" alt="">
+                      <p class="fbfnm">Mutton kosha combo</p>
+                     </div>
+                     <div>
+                      <Span class="price">  ₹ 849</Span>
+                    </div>
+                </div>
+                 <!-- <Span class="price">  ₹ 499</Span> -->
+                <p class="meteiqt">Shukto, machher matha diye moong dal with jhuri bhaja, mutton kosha, chutney with papad, payesh.</p>
+           </div>
+    
+           <div>
+            <div class="itema">
+                <div class="iat" >
+                  <img class="vegi" src="images/nonvegtri.png" alt="">
+                  <p class="fbfnm">Chicken kosha-basanti pulao</p>
+                 </div>
+                 <div>
+                  <Span class="price">  ₹ 699</Span>
+                </div>
+            </div>
+             <!-- <Span class="price">  ₹ 499</Span> -->
+            <p class="meteiqt">Chicken kosha, basanti pulao, chutney with papad, payesh.</p>
+       </div>   
+                             
+       <div>
+        <div class="itema">
+            <div class="iat" >
+              <img class="vegi" src="images/nonvegtri.png" alt="">
+              <p class="fbfnm">Chicken kosha-luchi combo</p>
+             </div>
+             <div>
+              <Span class="price">  ₹ 699</Span>
+            </div>
+        </div>
+         <!-- <Span class="price">  ₹ 499</Span> -->
+        <p class="meteiqt">Chholar dal, chicken kosha, luchi, chutney with papad, payesh.</p>
+    </div>
+    
+    
+    <div>
+        <div class="itema">
+            <div class="iat" >
+              <img class="vegi" src="images/nonvegtri.png" alt="">
+              <p class="fbfnm">Mutton kosha basanti pulao</p>
+             </div>
+             <div>
+              <Span class="price">  ₹ 849</Span>
+            </div>
+        </div>
+         <!-- <Span class="price">  ₹ 499</Span> -->
+        <p class="meteiqt">Mutton kosha, basanti pulao, chutney with papad, payesh.</p>
+    </div>
+    
+    
+    <div>
+        <div class="itema">
+            <div class="iat" >
+              <img class="vegi" src="images/nonvegtri.png" alt="">
+              <p class="fbfnm">Mutton kosha-luchi combo</p>
+             </div>
+             <div>
+              <Span class="price">  ₹ 849</Span>
+            </div>
+        </div>
+         <!-- <Span class="price">  ₹ 499</Span> -->
+        <p class="meteiqt">Chholar dal, mutton kosha, luchi, chutney with papad, payesh.</p>
+    </div>
+    
+                </div>
+            </div>
+
+            <div class="faq-container" id="beverages">
+              <h2 class="stat">Beverages</h2>
+      
+              <div class="faq-item">
+                  <!-- <div class="faq-header om-wayr">
+                    <div class="ita">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTk0mkeknyuA_E-W8nWun8m0RcpY0RWzmjng&s" alt="FAQ 1" class="faq-image">
+                      <div class="faq-question siits">STARTER</div>
+                    </div>
+                      <div class="faq-arrow">&#9662;</div> 
+                  </div> -->
+      
+                        <div>
+                              <div class="itema">
+                                  <div class="iat" >
+                                    <!-- <img class="vegi" src="images/nonvegtri.png" alt=""> -->
+                                    <p class="fbfnm">Virgin mojito.</p>
+                                   </div>
+                                   <div>
+                                    <Span class="price">  ₹ 189</Span>
+                                  </div>
+                              </div>
+                               <!-- <Span class="price">  ₹ 499</Span> -->
+                              <!-- <p class="meteiqt">Shukto, machher matha diye moong dal with jhuri bhaja, sorshe rui, chutney with papad, payesh.</p> -->
+                         </div>
+      
+                         <div>
+                          <div class="itema">
+                              <div class="iat" >
+                                <p class="fbfnm">Thandai cucumber</p>
+                               </div>
+                               <div>
+                                <Span class="price">  ₹ 189</Span>
+                              </div>
+                          </div>
+                           <!-- <Span class="price">  ₹ 499</Span> -->
+                     </div>
+      
+                     <div>
+                      <div class="itema">
+                          <div class="iat" >
+                          
+                            <p class="fbfnm">Bombay collins</p>
+                           </div>
+                           <div>
+                            <Span class="price">  ₹ 189</Span>
+                          </div>
+                      </div>
+                       <!-- <Span class="price">  ₹ 499</Span> -->
+                 </div>
+      
+                 <div>
+                  <div class="itema">
+                      <div class="iat" >
+                        <p class="fbfnm">Glee chee</p>
+                       </div>
+                       <div>
+                        <Span class="price">  ₹ 189</Span>
+                      </div>
+                  </div>
+                   <!-- <Span class="price">  ₹ 499</Span> -->
+             </div>
+      
+                 <div>
+                  <div class="itema">
+                      <div class="iat" >
+                       
+                        <p class="fbfnm">Virgin pinacolada</p>
+                       </div>
+                       <div>
+                        <Span class="price">  ₹ 259</Span>
+                      </div>
+                  </div>
+                   <!-- <Span class="price">  ₹ 499</Span> -->
+             </div>
+      
+             <div>
+              <div class="itema">
+                  <div class="iat" >
+                   
+                    <p class="fbfnm">Fruit punch</p>
+                   </div>
+                   <div>
+                    <Span class="price">  ₹ 259</Span>
+                  </div>
+              </div>
+               <!-- <Span class="price">  ₹ 499</Span> -->
+         </div>   
+                               
+         <div>
+          <div class="itema">
+              <div class="iat" >
+               
+                <p class="fbfnm">Spicy juleep</p>
+               </div>
+               <div>
+                <Span class="price">  ₹ 239</Span>
+              </div>
+          </div>
+           <!-- <Span class="price">  ₹ 499</Span> -->
+         
+      </div>
+      
+      
+      <div>
+          <div class="itema">
+              <div class="iat" >
+                <p class="fbfnm">Mango tango</p>
+               </div>
+               <div>
+                <Span class="price">  ₹ 239</Span>
+              </div>
+          </div>
+           <!-- <Span class="price">  ₹ 499</Span> -->
+        
+      </div>
+      
+      
+      <div>
+          <div class="itema">
+              <div class="iat" >
+                <p class="fbfnm">Ross marry</p>
+               </div>
+               <div>
+                <Span class="price">  ₹ 169</Span>
+              </div>
+          </div>
+           <!-- <Span class="price">  ₹ 499</Span> -->
+      </div>
+      
+      <div>
+          <div class="itema">
+              <div class="iat" >
+                <p class="fbfnm">Ocean blue</p>
+               </div>
+               <div>
+                <Span class="price">  ₹ 169</Span>
+              </div>
+          </div>
+           <!-- <Span class="price">  ₹ 499</Span> -->
+      </div>
+      
+      <div>
+          <div class="itema">
+              <div class="iat" >
+                <p class="fbfnm">Masala cola</p>
+               </div>
+               <div>
+                <Span class="price">  ₹ 169</Span>
+              </div>
+          </div>
+           <!-- <Span class="price">  ₹ 499</Span> -->
+      </div>
+      
+      <div>
+          <div class="itema">
+              <div class="iat" >
+                <p class="fbfnm">Fresh lime water/soda</p>
+               </div>
+               <div>
+                <Span class="price">  ₹ 149</Span>
+              </div>
+          </div>
+           <!-- <Span class="price">  ₹ 499</Span> -->
+      </div>
+      
+      <div></div>
+          <div class="itema">
+              <div class="iat" >
+                <p class="fbfnm">Aerated beverages (coke, sprite)</p>
+               </div>
+               <div>
+                <Span class="price">  ₹ 149</Span>
+              </div>
+          </div>
+           <!-- <Span class="price">  ₹ 499</Span> -->
+      </div>
+      
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      
+
+    </div>  
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
