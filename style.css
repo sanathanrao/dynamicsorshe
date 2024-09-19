@@ -76,6 +76,7 @@ body{
     padding: 15px 0;
     text-decoration: none;
 }
+
 .cater a{
     text-decoration: none;
 }
@@ -92,3 +93,8 @@ body{
     color: rgb(105, 105, 105);
 }
 /* ------------------- */
+@media screen and (max-width: 500px){
+    .cater{
+        padding: 0;
+    }
+}
