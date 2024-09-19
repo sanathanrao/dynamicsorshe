@@ -97,4 +97,7 @@ body{
     .cater{
         padding: 0;
     }
+    .albuon{
+        flex-wrap: wrap;
+    }
 }
