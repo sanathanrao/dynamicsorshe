@@ -97,6 +97,7 @@ body{
 @media screen and (max-width: 500px){
     .cater{
         padding: 0;
+        display: block;
     }
     .albuon{
         flex-wrap: wrap;
